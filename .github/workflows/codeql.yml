@@ -77,7 +77,7 @@ jobs:
     #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
     
     - name: Build SampleApplication
-      run: cd InsecureShop-android && ./gradlew --no-daemon build
+      run: cd InsecureShop-android && ./gradlew --no-daemon build -x lint
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
