@@ -28,8 +28,7 @@ jobs:
       actions: read
       contents: read
       security-events: write
-    env:
-      CODEQL_EXTRACTOR_JAVA_AGENT_ENABLE_KOTLIN: true
+
 
     strategy:
       fail-fast: false
